@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { availabilityService } from "@/services";
-import type { ApiResponse, AvailabilitySlot } from "@wismannur/cms-contracts";
+import type { ApiResponse, AvailabilitySlot } from "@wismannur.pro/cms-contracts";
 
 export const dynamic = "force-dynamic";
 

@@ -31,7 +31,7 @@ async function withRetry<T>(fn: () => Promise<T>, retries = 3): Promise<T> {
   return fn();
 }
 
-import { CMS_CACHE_TAGS } from "@wismannur/cms-contracts";
+import { CMS_CACHE_TAGS } from "@wismannur.pro/cms-contracts";
 import { dispatchRevalidation } from "@/lib/revalidation-dispatcher";
 
 function revalidateBlogPaths(...slugs: Array<string | null | undefined>) {

@@ -11,7 +11,7 @@ import { assertAdmin } from "../core/auth-guard";
 import { ServiceError } from "../core/base-service";
 import { DEFAULT_SITE_SETTINGS } from "./defaults";
 import type { SiteSettings, SiteSettingsUpdate } from "./types";
-import { CMS_CACHE_TAGS } from "@wismannur/cms-contracts";
+import { CMS_CACHE_TAGS } from "@wismannur.pro/cms-contracts";
 import { dispatchRevalidation } from "@/lib/revalidation-dispatcher";
 
 // Server actions backing `siteSettingsService` — the singleton row feeding

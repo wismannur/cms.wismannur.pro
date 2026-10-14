@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { serviceCatalogService } from "@/services";
-import type { ApiResponse, ServiceItem } from "@wismannur/cms-contracts";
+import type { ApiResponse, ServiceItem } from "@wismannur.pro/cms-contracts";
 
 export const dynamic = "force-dynamic";
 

@@ -8,7 +8,7 @@ import { getDb, schema } from "@/db";
 import { assertAdmin } from "../core/auth-guard";
 import { ServiceError } from "../core/base-service";
 import type { CtaData, PageCopyContent, PageCopyEntry, PageCopyMap, PageKey } from "./types";
-import { CMS_CACHE_TAGS } from "@wismannur/cms-contracts";
+import { CMS_CACHE_TAGS } from "@wismannur.pro/cms-contracts";
 import { dispatchRevalidation } from "@/lib/revalidation-dispatcher";
 
 // Server actions backing `pageCopyService` — one typed jsonb blob per page

@@ -6,7 +6,7 @@ import {
   skillsService,
   userService,
 } from "@/services";
-import type { ApiResponse } from "@wismannur/cms-contracts";
+import type { ApiResponse } from "@wismannur.pro/cms-contracts";
 
 export const dynamic = "force-dynamic";
 

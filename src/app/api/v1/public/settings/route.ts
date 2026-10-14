@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { siteSettingsService } from "@/services";
-import type { ApiResponse, SiteSettings } from "@wismannur/cms-contracts";
+import type { ApiResponse, SiteSettings } from "@wismannur.pro/cms-contracts";
 
 export const dynamic = "force-dynamic";
 

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getPublicProspectBySlug } from "@/services/project-finder/actions";
-import type { ApiResponse, ProjectProspect } from "@wismannur/cms-contracts";
+import type { ApiResponse, ProjectProspect } from "@wismannur.pro/cms-contracts";
 
 export const dynamic = "force-dynamic";
 

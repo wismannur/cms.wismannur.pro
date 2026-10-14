@@ -15,7 +15,7 @@ import type { NewServiceItem, ServiceItem, UpdateServiceItem } from "./types";
 
 const { services } = schema;
 
-import { CMS_CACHE_TAGS } from "@wismannur/cms-contracts";
+import { CMS_CACHE_TAGS } from "@wismannur.pro/cms-contracts";
 import { dispatchRevalidation } from "@/lib/revalidation-dispatcher";
 
 function revalidateCatalogPaths() {

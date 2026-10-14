@@ -1,4 +1,4 @@
-import { CMS_CACHE_TAGS, type RevalidationPayload } from "@wismannur/cms-contracts";
+import { CMS_CACHE_TAGS, type RevalidationPayload } from "@wismannur.pro/cms-contracts";
 
 /**
  * Dispatch on-demand revalidation to the public frontend (wismannur.pro)

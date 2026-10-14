@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { pageCopyService } from "@/services";
-import type { ApiResponse, PageCopyContent, PageKey } from "@wismannur/cms-contracts";
+import type { ApiResponse, PageCopyContent, PageKey } from "@wismannur.pro/cms-contracts";
 
 export const dynamic = "force-dynamic";
 
