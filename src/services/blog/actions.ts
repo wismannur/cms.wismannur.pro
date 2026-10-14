@@ -76,6 +76,16 @@ export async function getByPage(
   });
 }
 
+export async function getPublished(): Promise<Blog[]> {
+  return withRetry(async () => {
+    return getDb()
+      .select()
+      .from(blogs)
+      .where(eq(blogs.isPublished, true))
+      .orderBy(descNullsLast(blogs.publishedDate));
+  });
+}
+
 export async function getAll(): Promise<Blog[]> {
   await assertAdmin();
   return withRetry(async () => {

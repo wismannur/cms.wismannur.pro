@@ -5,6 +5,7 @@ import * as actions from "./actions";
 export const blogService = {
   getByPage: actions.getByPage,
   getAll: actions.getAll,
+  getPublished: actions.getPublished,
   getLatest: actions.getLatest,
   getBySlug: actions.getBySlug,
   getById: actions.getById,

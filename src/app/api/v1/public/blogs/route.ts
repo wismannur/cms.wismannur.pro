@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
     if (limit) {
       blogs = (await blogService.getLatest(limit)) as unknown as Blog[];
     } else {
-      blogs = (await blogService.getAll()) as unknown as Blog[];
+      blogs = (await blogService.getPublished()) as unknown as Blog[];
     }
 
     const response: ApiResponse<Blog[]> = {
