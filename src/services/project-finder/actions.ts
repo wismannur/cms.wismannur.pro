@@ -110,6 +110,18 @@ export async function getPublicProspectBySlug(slug: string): Promise<ProjectPros
   }
 }
 
+export async function getPublicProspects(): Promise<ProjectProspect[]> {
+  try {
+    const db = getDb();
+    const rows = await db.select().from(projectProspects);
+    return rows.map(toProjectProspect);
+  } catch (error) {
+    console.error("getPublicProspects error:", error);
+    return [];
+  }
+}
+
+
 export async function createProspect(data: NewProjectProspect): Promise<ProjectProspect> {
   await assertAdmin();
   const db = getDb();
