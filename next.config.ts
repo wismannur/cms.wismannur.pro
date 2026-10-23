@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   // default 1mb body cap is too tight for the 5MB legacy allowance.
   experimental: {
     serverActions: { bodySizeLimit: "5mb" },
+    agentUpgrade: "security",
   },
   allowedDevOrigins: [
     "*.trycloudflare.com",
